@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>신은희 강사 프로필</title>
+  <style>
+    /* 기본 리셋 및 스타일 */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background-color: #f8fafc;
+      color: #1e293b;
+      line-height: 1.7;
+      padding-bottom: 3rem;
+    }
+
+    .container {
+      max-width: 840px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+
+    /* 이미지 스타일 */
+    .image-wrapper {
+      margin: 2rem 0;
+      border-radius: 1rem;
+      overflow: hidden;
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+      background-color: #fff;
+    }
+
+    .main-img {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: cover;
+    }
+
+    /* 프로필 헤더 */
+    .profile-header {
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+
+    .name {
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: #0f172a;
+      margin-bottom: 0.25rem;
+    }
+
+    .title {
+      font-size: 1.1rem;
+      color: #2563eb;
+      font-weight: 600;
+    }
+
+    /* 콘텐츠 카드 */
+    .content-card {
+      background: #ffffff;
+      border-radius: 1rem;
+      padding: 2rem;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+      border: 1px solid #e2e8f0;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    /* 섹션 공통 스타일 */
+    .section-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #1e293b;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .section-title::before {
+      content: '';
+      display: inline-block;
+      width: 4px;
+      height: 1.25rem;
+      background-color: #2563eb;
+      border-radius: 2px;
+    }
+
+    /* 강의 분야 배지 스타일 */
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .tag {
+      background-color: #eff6ff;
+      color: #1d4ed8;
+      font-weight: 600;
+      padding: 0.4rem 0.9rem;
+      border-radius: 2rem;
+      font-size: 0.95rem;
+    }
+
+    /* 리스트 스타일 */
+    .info-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+    }
+
+    .info-list li {
+      position: relative;
+      padding-left: 1.2rem;
+      color: #475569;
+      font-size: 1rem;
+      word-break: keep-all;
+    }
+
+    .info-list li::before {
+      content: '•';
+      position: absolute;
+      left: 0;
+      color: #2563eb;
+      font-weight: bold;
+    }
+
+    /* 하단 정적 영역 */
+    footer {
+      text-align: center;
+      margin-top: 3rem;
+      color: #94a3b8;
+      font-size: 0.875rem;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    
+    <!-- 상단 이미지 영역 -->
+    <div class="image-wrapper">
+      <img class="main-img" src="profile_2.png" alt="신은희 강사 강의 모습">
+    </div>
+
+    <!-- 이름 및 타이틀 -->
+    <header class="profile-header">
+      <h1 class="name">신은희</h1>
+      <p class="title">강사 / 미디어아티스트</p>
+    </header>
+
+    <!-- 상세 내용 카드 -->
+    <main class="content-card">
+      
+      <!-- 강의 분야 -->
+      <section>
+        <h2 class="section-title">강의 분야</h2>
+        <div class="tags">
+          <span class="tag">AI</span>
+          <span class="tag">SW</span>
+          <span class="tag">바이브코딩</span>
+          <span class="tag">미디어아트</span>
+        </div>
+      </section>
+
+      <!-- 강의 경력 -->
+      <section>
+        <h2 class="section-title">강의 경력</h2>
+        <ul class="info-list">
+          <li>성남미디어센터</li>
+          <li>시청자미디어재단</li>
+          <li>경기도교육청 미디어교육센터</li>
+          <li>게임문화재단 외 출강</li>
+        </ul>
+      </section>
+
+      <!-- 프로젝트 -->
+      <section>
+        <h2 class="section-title">프로젝트</h2>
+        <ul class="info-list">
+          <li>동심, 다시 한 번전 (더플럭스 더플로우)</li>
+          <li>서울문화재단 커넥트플러스전</li>
+          <li>어반 오디세우스 세운전 (아는을지로)</li>
+          <li>래디컬 뮤지엄전 (서울혁신파크)</li>
+          <li>헬로 미디어 아트전 (상상마당)</li>
+          <li>괴어오르다전 (샘표스페이스)</li>
+          <li>리 플레이전 (플래툰 쿤스트할레) 등</li>
+        </ul>
+      </section>
+
+    </main>
+
+    <footer>
+      © 2026 신은희. All rights reserved.
+    </footer>
+
+  </div>
+
+</body>
+</html>
